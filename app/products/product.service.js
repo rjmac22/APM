@@ -27,7 +27,7 @@ var ProductService = (function () {
             .catch(this.handleError);
     };
     ProductService.prototype.handleError = function (error) {
-        console.error(errror);
+        console.error(error);
         return Observable_1.Observable.throw(error.json().error || 'Server error');
     };
     ProductService = __decorate([
